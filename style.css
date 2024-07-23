@@ -1,0 +1,70 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+
+#login-container{
+    margin-top: 20%;
+    border:1px solid #CACACA;
+    width: 35%;
+    padding: 20px;
+    text-align: center;
+}
+
+#form{
+   width: fit-content;
+   height:fit-content;
+
+}
+#email{
+    font-size: medium;
+    width: 85%;
+    margin: 5px;
+    padding: 15PX;
+    border-radius: 5px;
+    border: 1px solid #CACACA;
+}
+#password{
+    font-size: medium;
+    width: 85%;
+    margin: 10px;
+    padding: 15PX;
+    border-radius: 5px;
+    border: 1px solid #CACACA;
+}
+#sign-in
+{
+    color: #fff;
+    font-size: medium;
+    width: 95%;
+    margin: 10px;
+    padding: 15PX;
+    border-radius: 5px;
+    background-color:#0171d3 ;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    opacity: 1;
+}
+.line{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    margin: 36px 0;
+    background-color: #d4d4d4;
+}
+.line::before{
+    content: 'OR';
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    background-color: #FFF;
+    color: #8b8b8b;
+    padding:  15px;
+}
+#forgot-password{
+    font-size: large;
+    text-decoration: none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"></script>
+    <!-- Firebase Auth -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js"></script>
+</head>
+<body>
+    
+    <!-- Sign-In form-->
+    <div id="Sign-in-form">
+        <div id="login-container">
+            <h1>Login</h1>
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <a href="#" id="forgot-password">Forgot Password ?</a>
+            
+            <button id="sign-in">Sign In</button>
+            <div class="line"></div>
+            <span>Don't have an account? <a href="#" id="sign-up">Sign Up</a></span>
+        </div>
+    </div>
+
+
+    <!-- Sign-up form -->
+<div id="Sign-up-form">
+    <div id="login-container" style="display: none;">
+        <h1>Sign-Up</h1>
+        <input type="email" id="sign-up-email" placeholder="Email">
+        <input type="password" id="sign-up-password" placeholder="Password">
+        <input type="password" id="sign-up-password" placeholder="confirm-Password">
+        <button id="sign-in">Sign Up</button>
+        <div class="line"></div>
+        <span>Already have an account? <a href="#" id="sign-in">Sign In</a></span>
+    </div>
+</div>
+    
+
+
+    <div id="user-container" style="display: none;">
+        <h2>Welcome, <span id="user-email"></span></h2>
+        <button id="sign-out">Sign Out</button>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
